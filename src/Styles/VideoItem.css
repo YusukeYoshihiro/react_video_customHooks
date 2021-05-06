@@ -1,0 +1,14 @@
+.video_item {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .video_item {
+   flex-direction: column;
+  }
+}
+
+.video_item.item img{
+  max-width: 180px;
+  align-self: start;
+}
