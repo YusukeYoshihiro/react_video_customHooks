@@ -5,12 +5,6 @@ import {SearchAlt} from '@styled-icons/boxicons-regular/SearchAlt'
 // styles
 const SearchCtn = styled.div`
   display: flex;
- 
-  @media screen and (max-width: 768px){
-    input{
-     padding: 0 !important;
-    }
-  }
 `
 const Label = styled.label`
   border: 0 !important;
