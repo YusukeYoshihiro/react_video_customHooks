@@ -8,7 +8,7 @@ const SearchCtn = styled.div`
  
   @media screen and (max-width: 768px){
     input{
-     padding: 0;
+     padding: 0 !important;
     }
   }
 `
