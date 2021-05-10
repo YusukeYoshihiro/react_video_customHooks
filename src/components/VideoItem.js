@@ -8,13 +8,19 @@ const VideoItem = ({ video, onVideoSelect }) => {
 
   const numFormatter = (num) => {
     if (num > 999 && num < 1000000) {
-      return (num / 1000).toFixed(1) + 'K';
+      if (num / 1000 < 10) {
+        return (num / 1000).toFixed(1) + "K";
+      }
+      return Math.floor(num / 1000) + "K";
     } else if (num > 1000000) {
-      return (num / 1000000).toFixed(1) + 'M';
+      if (num / 1000000 < 10) {
+        return (num / 1000000).toFixed(1) + "M";
+      }
+      return Math.floor(num / 1000000) + "M";
     } else if (num < 900) {
       return num;
     }
-  }
+  };
 
   // console.log(video);
   const convertDate = moment(video.snippet.publishedAt).fromNow();
