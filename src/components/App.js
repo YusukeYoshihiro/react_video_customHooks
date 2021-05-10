@@ -8,7 +8,7 @@ import useVideos from '../hooks/useVideos';
 
 
 const VideoIcon = styled(videoIcon)`
-   color: red;
+   color:#00c4cc;
    width:40px;
    margin-right:10px;
 `;
