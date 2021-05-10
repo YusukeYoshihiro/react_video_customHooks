@@ -12,17 +12,6 @@ const VideoDetail = ({ video }) => {
   const separate = (num) => {
     return String(num).replace( /(\d)(?=(\d\d\d)+(?!\d))/g, '$1,');
 }
-  // const numFormatter = (num) => {
-  //   if (num > 999 && num < 1000000) {
-  //     return (num / 1000).toFixed(1) + 'K';
-  //   } else if (num > 1000000) {
-  //     return (num / 1000000).toFixed(1) + 'M';
-  //   } else if (num < 900) {
-  //     return num;
-  //   }
-  // }
-
-
   return (
     <div>
       <div className="ui embed">

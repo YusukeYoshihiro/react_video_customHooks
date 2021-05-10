@@ -5,6 +5,12 @@ import {SearchAlt} from '@styled-icons/boxicons-regular/SearchAlt'
 // styles
 const SearchCtn = styled.div`
   display: flex;
+ 
+  @media screen and (max-width: 768px){
+    input{
+     padding: 0;
+    }
+  }
 `
 const Label = styled.label`
   border: 0 !important;
@@ -47,10 +53,9 @@ const SearchBar = ({ onFormSubmit }) => {
         <SearchCtn className="field">
           <Label>Search Bar</Label>
           <SearchIcon/>
-          <input
+          <input 
             type="text"
             value={term}
-            // onChange={e=> this.setState({term: e.target.value})}
             onChange={onInputChange}
             placeholder="Search Video"
           />
