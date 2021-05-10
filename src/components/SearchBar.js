@@ -5,6 +5,15 @@ import {SearchAlt} from '@styled-icons/boxicons-regular/SearchAlt'
 // styles
 const SearchCtn = styled.div`
   display: flex;
+  input{
+    width:350px;
+    @media screen and (min-width: 768px){
+      width:450px;
+    }
+    @media screen and (min-width: 1024px){
+      width:700px;
+    }
+  }
 `
 const Label = styled.label`
   border: 0 !important;
@@ -42,17 +51,17 @@ const SearchBar = ({ onFormSubmit }) => {
   }
   
   return (
-    <div className="search-bar ui segment">
-      <form onSubmit={onSubmit} className="ui form">
-        <SearchCtn className="field">
+    <div >
+      <form onSubmit={onSubmit} >
+        <SearchCtn >
           <Label>Search Bar</Label>
-          <SearchIcon/>
           <input 
             type="text"
             value={term}
             onChange={onInputChange}
             placeholder="Search Video"
           />
+          <SearchIcon/>
         </SearchCtn>
       </form>
     </div>
