@@ -33,8 +33,6 @@ const App = () => {
         Search Your Favorite Video!!
         </h2>
       </div >
-      {/* "onFormSubmit", "video", "onVideoSelected", "videos" are pops name */}
-      {/* "" */}
       <SearchBar onFormSubmit={search} />
       <div className="ui grid">
         <div className="ui row stackable">
