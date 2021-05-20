@@ -6,9 +6,17 @@ import { Youtube as videoIcon } from '@styled-icons/boxicons-logos/Youtube';
 import styled from 'styled-components';
 import useVideos from '../hooks/useVideos';
 
+const VideoCtn = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  h2{
+    margin-top: 0;
+  }
+`
 
 const VideoIcon = styled(videoIcon)`
-   color:#00c4cc;
+   color:#cc1100;
    width:40px;
    margin-right:10px;
 `;
@@ -27,12 +35,12 @@ const App = () => {
 
   return (
     <div className="ui container">
-      <div style={{display: 'flex', alignItems:'center',  padding:'10px'}} >
+      <VideoCtn  >
         <VideoIcon/>
-        <h2 style={{marginTop: '0',}}>
+        <h2>
         Search Your Favorite Video!!
         </h2>
-      </div >
+      </VideoCtn >
       <SearchBar onFormSubmit={search} />
       <div className="ui grid">
         <div className="ui row stackable">
