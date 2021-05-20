@@ -7,6 +7,9 @@ const SearchCtn = styled.div`
   display: flex;
   input{
     width:350px;
+    outline: none;
+    border-radius:3px;
+    padding: 5px;
     @media screen and (min-width: 768px){
       width:450px;
     }

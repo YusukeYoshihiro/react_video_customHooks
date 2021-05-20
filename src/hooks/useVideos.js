@@ -9,6 +9,7 @@ const useVideos = (defaultSearchTerm) => {
     search(defaultSearchTerm);
   }, [defaultSearchTerm])
 
+
   const getVideoById = (id) => {
     // To refer video view count
     return getViewCount.get(`/videos`, {
@@ -39,7 +40,7 @@ const useVideos = (defaultSearchTerm) => {
 
     setVideos(videos);
   };
-  
+
   return [videos, search]  
 }
 
